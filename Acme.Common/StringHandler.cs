@@ -2,9 +2,9 @@
 
 namespace Acme.Common
 {
-    public class StringHandler
+    public static class StringHandler
     {
-        public String InsertSpaces(string source)
+        public static String InsertSpaces(this string source)
         {
             string result = string.Empty;
             if ((!String.IsNullOrWhiteSpace(source)))
