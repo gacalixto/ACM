@@ -1,0 +1,37 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Acme.Common.Test
+{
+    [TestClass]
+    public class StringHandlerTest
+    {
+        [TestMethod]
+        public void InsertSpacesTestValid()
+        {
+
+            //Arrange
+            var source = "SonicScrewdriver";
+            var expected = "Sonic Screwdriver";
+
+            var handler = new StringHandler();
+            //act
+            var actual = handler.InsertSpaces(source);
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void InsertSpacesTestWithExistingSpace()
+        {
+
+            //Arrange
+            var source = "Sonic Screwdriver";
+            var expected = "Sonic Screwdriver";
+
+            var handler = new StringHandler();
+            //act
+            var actual = handler.InsertSpaces(source);
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+    }
+}

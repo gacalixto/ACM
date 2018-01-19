@@ -19,7 +19,13 @@ namespace ACM.BL
         public Decimal? CurrentPrice { get; set; }
         public int ProductId { get; private set; }
         public string ProductDescription { get; set; }
-        public string ProductName { get; set; }
+        private String _Productname;
+
+        public String ProductName
+        {
+            get { return _Productname; }
+            set { _Productname = value; }
+        }
 
         public Product Retrieve(int productId)
         {
@@ -50,5 +56,7 @@ namespace ACM.BL
         {
             return ProductName;
         }
+
+        
     }
 }

@@ -20,7 +20,7 @@ namespace ACM.BL
         {
             OrderDisplay orderDisplay = new OrderDisplay();
 
-            orderDisplay.orderDisplayIttemList = new List<OrderDisplayItem>();
+            orderDisplay.orderDisplayItemList = new List<OrderDisplayItem>();
 
             return orderDisplay;
         }

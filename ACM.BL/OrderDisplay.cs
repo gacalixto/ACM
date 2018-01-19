@@ -9,8 +9,8 @@ namespace ACM.BL
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTimeOffset? OrderDate { get; set; }
-        public List<OrderDisplayItem> orderDisplayIttemList { get; set; }
-        public int OrderId { get;set }
+        public List<OrderDisplayItem> orderDisplayItemList { get; set; }
+        public int OrderId { get; set; }
         public Address ShippingAddress { get; set; }
     }
 }

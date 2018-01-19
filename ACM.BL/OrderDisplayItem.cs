@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ACM.BL
 {
-    class OrderDisplayItem
+    public class OrderDisplayItem
     {
         public int OrderItemId { get; private set; }
         public int OrderQuantity { get; set; }
